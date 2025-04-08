@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Magik - Marvel Rivals Guide</title>
+    <style>
+        /* Color Theme: Magik's colors - dark purples, golds, and mystical blues */
+        :root {
+            --magik-purple: #4a1e6a;
+            --magik-dark: #2a0c3d;
+            --magik-gold: #d4af37;
+            --magik-blue: #5d8aa8;
+            --magik-light: #e6d5f7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--magik-light);
+            background-color: var(--magik-dark);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--magik-purple), var(--magik-dark));
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://i.imgur.com/JQZ1l0a.png') center/cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--magik-gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--magik-gold);
+            color: var(--magik-dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid var(--magik-gold);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--magik-gold);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            background-color: var(--magik-purple);
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid var(--magik-gold);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .section {
+            padding: 3rem 2rem;
+        }
+        
+        .section-dark {
+            background-color: var(--magik-dark);
+        }
+        
+        .section-purple {
+            background-color: var(--magik-purple);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--magik-gold);
+            text-align: center;
+        }
+        
+        .abilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .ability {
+            background-color: rgba(42, 12, 61, 0.7);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--magik-gold);
+        }
+        
+        .ability h3 {
+            color: var(--magik-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .tips {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .tips ul {
+            list-style-position: inside;
+            margin-top: 1rem;
+        }
+        
+        .tips li {
+            margin-bottom: 0.8rem;
+        }
+        
+        footer {
+            background-color: #1a0529;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .social-links a {
+            color: var(--magik-light);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--magik-gold);
+        }
+        
+        .copyright {
+            margin-top: 1rem;
+            color: var(--magik-blue);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .abilities {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Master Magik in Marvel Rivals</h1>
+            <p class="subtitle">Unlock the full potential of the Darkchylde with our comprehensive guide</p>
+            <a href="#abilities" class="cta-button">View Abilities</a>
+        </div>
+    </header>
+    
+    <!-- Image Gallery Section -->
+    <div class="gallery">
+        <img src="https://i.imgur.com/JQZ1l0a.png" alt="Magik character art">
+        <img src="https://i.imgur.com/8Kj3lX2.jpg" alt="Magik using Soulsword">
+        <img src="https://i.imgur.com/5lM9pZ3.jpg" alt="Magik portal ability">
+        <img src="https://i.imgur.com/3nQ7sV9.jpg" alt="Magik ultimate ability">
+    </div>
+    
+    <!-- Abilities Section -->
+    <section id="abilities" class="section section-dark">
+        <h2>Magik's Abilities</h2>
+        <div class="abilities">
+            <div class="ability">
+                <h3>Soulsword Strike</h3>
+                <p>Magik's primary melee attack with her mystical Soulsword, dealing moderate damage with quick slashes.</p>
+            </div>
+            <div class="ability">
+                <h3>Limbo Portal</h3>
+                <p>Create temporary portals that allies and enemies can use for strategic positioning.</p>
+            </div>
+            <div class="ability">
+                <h3>Dimensional Shift</h3>
+                <p>Teleport short distances to evade attacks or reposition during combat.</p>
+            </div>
+            <div class="ability">
+                <h3>Darkchylde's Grasp</h3>
+                <p>Summon demonic hands from Limbo to immobilize enemies in an area.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gameplay Tips Section -->
+    <section class="section section-purple">
+        <h2>Gameplay Tips</h2>
+        <div class="tips">
+            <ul>
+                <li>Use portals to create escape routes for your team or cut off enemy retreats</li>
+                <li>Combine Dimensional Shift with Soulsword attacks for hit-and-run tactics</li>
+                <li>Save Darkchylde's Grasp for when enemies are grouped together</li>
+                <li>Practice portal placement to master battlefield control</li>
+                <li>Use your teleport to reach high ground and gain tactical advantage</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Counters Section -->
+    <section class="section section-dark">
+        <h2>Counters & Matchups</h2>
+        <div class="tips">
+            <ul>
+                <li><strong>Strong against:</strong> Slow, ground-based heroes without mobility options</li>
+                <li><strong>Weak against:</strong> Heroes with silence abilities or long-range snipers</li>
+                <li>Pair well with tanky heroes who can protect you while you set up portals</li>
+                <li>Avoid direct confrontations with brawlers - use your mobility instead</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" aria-label="GitHub">GitHub</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2024 Marvel Rivals Magik Guide. All rights reserved.</p>
+        <p>This content is not affiliated with Marvel or NetEase Games.</p>
+    </footer>
+</body>
+</html>
