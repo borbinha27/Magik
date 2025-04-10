@@ -82,6 +82,18 @@ h2 {
     background-color: rgba(60, 40, 45, 0.5);
 }
 
+.info-table th.nome-skill{
+    background-color:  rgba(70, 45, 53, 0.5);
+    width: 20%;
+    padding: 20px;
+    
+}
+
+.info-table th.tecla {
+    width: 15%;
+    text-align: center;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
