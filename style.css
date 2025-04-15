@@ -159,3 +159,24 @@ h2 {
     color: #ff6b6b;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;              
+    padding: 10px;         
+  }
+  
+  .social-icons a {
+    color: #cccbcb;           
+    font-size: 24px;      
+    transition: transform 0.3s, color 0.3s; 
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1); 
+  }
+  
+  .social-icons .fa-instagram:hover { color: #e1306c; }
+  .social-icons .fa-github:hover { color: #ffffff; }
+  .social-icons .fa-linkedin:hover { color: #0077b5; }
